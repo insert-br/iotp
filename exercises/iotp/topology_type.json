@@ -1,0 +1,13 @@
+{
+    "links": {
+        "c": [
+            "0ms", 
+            100
+        ], 
+        "w": [
+            "6ms", 
+            1
+        ]
+    }, 
+    "topology": "wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwc"
+}

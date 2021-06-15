@@ -1,0 +1,1 @@
+../iotp/test_run.sh

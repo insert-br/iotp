@@ -1,0 +1,49 @@
+tables {
+  preamble {
+    id: 33570997
+    name: "MyIngress.eth_tbl_forward"
+    alias: "eth_tbl_forward"
+  }
+  match_fields {
+    id: 1
+    name: "hdr.ethernet.dstAddr"
+    bitwidth: 48
+    match_type: EXACT
+  }
+  action_refs {
+    id: 16794708
+  }
+  action_refs {
+    id: 16814737
+  }
+  action_refs {
+    id: 16805608
+  }
+  size: 1024
+}
+actions {
+  preamble {
+    id: 16805608
+    name: "MyIngress.drop"
+    alias: "drop"
+  }
+}
+actions {
+  preamble {
+    id: 16794708
+    name: "MyIngress.eth_forward"
+    alias: "eth_forward"
+  }
+  params {
+    id: 1
+    name: "port"
+    bitwidth: 9
+  }
+}
+actions {
+  preamble {
+    id: 16814737
+    name: "MyIngress.broadcast"
+    alias: "broadcast"
+  }
+}
